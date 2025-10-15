@@ -12,8 +12,7 @@ Ovaj repozitorijum sadrži Jupyter notebook i uputstvo za treniranje modela koji
 .
 ├─ data/
 │  └─ products.csv                 # vaš dataset (može i sample)
-├─ notebooks/
-│  └─ 01_eda_and_modeling.ipynb    # glavni notebook
+├─ 01_eda_and_modeling.ipynb       # glavni notebook
 ├─ models/
 │  └─ product_category_model.pkl   # snimljen najbolji model (generiše notebook)
 ├─ reports/
@@ -50,7 +49,7 @@ pip install -r requirements.txt
 ```bash
 jupyter notebook
 ```
-2) Otvorite `notebooks/01_eda_and_modeling.ipynb`.
+2) Otvorite `01_eda_and_modeling.ipynb`.
 3) Pokrenite sve ćelije (Kernel → Restart & Run All).
 4) Izlazi će biti sačuvani u:
    - `reports/classification_report.txt`
