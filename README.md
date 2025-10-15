@@ -4,7 +4,7 @@ Ovaj repozitorijum sadrži Jupyter notebook i uputstvo za treniranje modela koji
 
 ## Šta dobijate
 - Notebook za kompletan tok: učitavanje podataka → priprema → treniranje (LinearSVC i ComplementNB) → evaluacija → snimanje artefakata.
-- Artefakti evaluacije u `reports/` (classification_report.txt, confusion_matrix.png, confusion_matrix_top20.png).
+- Artefakti evaluacije u `reports/` (classification_report.txt, confusion_matrix.png).
 - Snimljen najbolji model u `models/product_category_model.pkl`.
 
 ## Struktura repozitorijuma
@@ -18,7 +18,6 @@ Ovaj repozitorijum sadrži Jupyter notebook i uputstvo za treniranje modela koji
 ├─ reports/
 │  ├─ classification_report.txt
 │  ├─ confusion_matrix.png
-│  └─ confusion_matrix_top20.png
 ├─ requirements.txt
 ├─ .gitignore
 ├─ LICENSE
@@ -54,10 +53,9 @@ jupyter notebook
 4) Izlazi će biti sačuvani u:
    - `reports/classification_report.txt`
    - `reports/confusion_matrix.png`
-   - `reports/confusion_matrix_top20.png`
    - `models/product_category_model.pkl`
 
-Napomena: Ako broj klasa bude veoma veliki, notebook će automatski ograničiti "punu" konfuzionu matricu na najviše 50 najčešćih klasa da bi graf bio čitljiv i memorijski prihvatljiv. Uvek se kreira i "top20" verzija.
+Napomena: Ako broj klasa bude veoma veliki, notebook će automatski ograničiti "punu" konfuzionu matricu na najviše 50 najčešćih klasa da bi graf bio čitljiv i memorijski prihvatljiv.
 
 ## Korišćenje modela za inferenciju (van notebook-a)
 Primer Python skripte:
